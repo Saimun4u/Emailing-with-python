@@ -1,6 +1,6 @@
 import smtplib
 
-conn = smtplib.SMTP('smtp.gmail.com', 587)
+conn = smtplib.SMTP('smtp-mail.outlook.com', 587)
 
 # Port number for the smtp protocol is 587
 
@@ -14,10 +14,10 @@ print(conn.ehlo())
 
 print(conn.starttls())
 
-print(conn.login('saimun4u@gmail.com', 'xmtp_su8'))
+print(conn.login('super11@outlook.com', 'ru_8sek'))
 
-#Password is imaginary in this case.
+#Password is imaginary in this case. The email distribution works with the original password
 
-conn.sendmail('saimun4u@gmail.com', 'saimun4u@gmail.com', 'Subject: So long...\n\nDear Saimun\n, \nHow is it going?\n\n - From Sophie')
+conn.sendmail('super11@outlook.com', 'super11@outlook.com', 'Subject: So long...\n\nDear Saimun\n, \nHow is it going?\n\n - From Sophie')
 
 conn.quit()
